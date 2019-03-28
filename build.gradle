@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id 'war'
+    id "com.bmuschko.tomcat" version "2.5"
+}
+
+group 'com.wcq'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+project.webAppDirName = "src/main/webapp"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/cglib/cglib
+    compile group: 'cglib', name: 'cglib', version: '3.2.10'
+    // https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api
+    compile group: 'org.apache.tomcat', name: 'tomcat-servlet-api', version: '9.0.1'
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    compile group: 'com.google.guava', name: 'guava', version: '27.0.1-jre'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    def tomcatVersion = '9.0.1'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-logging-juli:9.0.0.M6",
+            "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+}
+//tomcat 插件的配置
+tomcat {
+    httpProtocol = 'org.apache.coyote.http11.Http11Nio2Protocol'
+    ajpProtocol  = 'org.apache.coyote.ajp.AjpNio2Protocol'
+}
+
+tomcatRun{
+    contextPath= '/springmvc'
+    URIEncoding= 'UTF-8'
+    reloadable = 'true'
+}

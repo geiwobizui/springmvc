@@ -1,0 +1,37 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : com.wcq : springmvc-1.0-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/build/libs/exploded/springmvc-1.0-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/springmvc-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="com.wcq.springmvc.main/web/Web Gradle : springmvc-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="com.wcq.springmvc.main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/out/production/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: cglib:cglib:3.2.10" />
+          <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-servlet-api:9.0.1" />
+          <element id="library" level="project" name="Gradle: com.google.guava:guava:27.0.1-jre" />
+          <element id="library" level="project" name="Gradle: org.ow2.asm:asm:7.0" />
+          <element id="library" level="project" name="Gradle: org.apache.ant:ant:1.10.3" />
+          <element id="library" level="project" name="Gradle: com.google.guava:failureaccess:1.0.1" />
+          <element id="library" level="project" name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" />
+          <element id="library" level="project" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" />
+          <element id="library" level="project" name="Gradle: org.checkerframework:checker-qual:2.5.2" />
+          <element id="library" level="project" name="Gradle: com.google.errorprone:error_prone_annotations:2.2.0" />
+          <element id="library" level="project" name="Gradle: com.google.j2objc:j2objc-annotations:1.1" />
+          <element id="library" level="project" name="Gradle: org.codehaus.mojo:animal-sniffer-annotations:1.17" />
+          <element id="library" level="project" name="Gradle: org.apache.ant:ant-launcher:1.10.3" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
